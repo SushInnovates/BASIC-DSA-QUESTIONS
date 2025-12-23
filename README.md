@@ -20,17 +20,10 @@ Each problem may be implemented in **one or more languages** depending on progre
 ---
 
 ## 📂 Repository Structure
-│
 ├── Java/
-│ ├── QuestionName.java
-│
-├── Cpp/
-│ ├── QuestionName.cpp
-│
-├── Python/
-│ ├── question_name.py
-│
-└── README.md
+│   ├── Factorial.java
+│   ├── Fibonacci.java
+
 ---
 
 ## 📊 Questions Progress Tracker
