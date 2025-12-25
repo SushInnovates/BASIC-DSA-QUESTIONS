@@ -22,4 +22,5 @@ int main(){
         cout<<"String is Not Palindrome";
     }
     return 0;
+
 }
