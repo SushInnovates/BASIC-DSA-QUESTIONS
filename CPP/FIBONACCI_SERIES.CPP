@@ -2,21 +2,23 @@
 using namespace std;
 int main()
 {
-    int n, i, n1 = 0, n2 = 1, n3;
-    cout << "Enter A Number : ";
+    int n, i, first = 0, second = 1, next;
+    cout << "Enter A Number of Terms : ";
     cin >> n;
 
     if (n >= 1)
-        cout << n1 << " ";
+        cout << first << " ";
     if (n >= 2)
-        cout << n2 << " ";
+        cout << second << " ";
 
     for (i = 3; i < n; i++)
     {
-        n3 = n1 + n2;
-        cout << n3 << " ";
-        n1 = n2;
-        n2 = n3;
+        next = first + second;
+        cout << next << " ";
+        first = second;
+        second = next;
     }
+    cout<<endl;
     return 0;
 }
+
