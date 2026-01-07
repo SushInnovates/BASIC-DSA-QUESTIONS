@@ -5,6 +5,12 @@ int main()
     int n;
     cout << "Enter Size of the Array : ";
     cin >> n;
+
+    if (n <= 0) {
+        cout << "Invalid size!" << endl;
+        return 0;
+    }
+
     int arr[n], i, sum = 0;
 
     cout << "Enter Array Elements : " << endl;
@@ -18,4 +24,5 @@ int main()
     }
     cout << "The Sum of All the Array Elements is " << sum;
     return 0;
+
 }
