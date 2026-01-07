@@ -7,9 +7,9 @@ int main()
     cout << "Enter Number : ";
     cin >> n;
 
-    if (n <= 0)
+    if (n < 0)
     {
-        cout << "Factorial of " << n << " is not possible";
+        cout << "Factorial of negative number is not possible";
         return 0;
     }
     for (i = 1; i <= n; i++)
@@ -18,4 +18,5 @@ int main()
     }
     cout << "Factorial of " << n << " is " << fact;
     return 0;
+
 }
