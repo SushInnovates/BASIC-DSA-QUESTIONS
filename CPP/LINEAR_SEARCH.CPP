@@ -5,16 +5,22 @@ int main()
     int n;
     cout << "Enter Size of the Array : ";
     cin >> n;
+  
+    if(n<=0){
+            cout<<"Invalid Array Size!";
+            return 0;
+        }
+
     int arr[n], key, i, flag = 0;
     cout << "Enter Array Elements : " << endl;
-    for (i = 0; i <= n - 1; i++)
+    for (i = 0; i < n ; i++)
     {
         cin >> arr[i];
     }
     cout << "Enter The Element You Would like to Search in this Array : ";
     cin >> key;
 
-    for (i = 0; i <= n - 1; i++)
+    for (i = 0; i < n ; i++)
     {
         if (key == arr[i])
         {
@@ -28,4 +34,5 @@ int main()
         cout << "Element Not Found!";
     }
     return 0;
+
 }
